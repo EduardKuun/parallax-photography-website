@@ -1,0 +1,260 @@
+body, html {
+    background-color: #f0f0f0;
+    min-height: 100% !important;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#logo {
+    position: absolute;
+    top: -5%;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    animation-name: textfade;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+#logo #border {
+    background-color: #f0f0f0;
+    color: #111111;
+    font-size: 16px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(30, 30, 30, 0.5);
+}
+
+@keyframes textfade {
+    0%{top: -5%;}
+    100%{top: 47%;}
+}
+
+.divider {
+    width: 100%;
+    text-align: center;
+    color: #383838;
+    text-transform: uppercase;
+    display: none;
+}
+
+.divider h1 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.divider p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.divider a {
+    color: #383838;
+}
+
+#showcase1, #showcase2 {
+    min-height: 100% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#showcase1 img, #showcase2 img {
+    min-height: 100% !important;
+    height: 100%;
+    box-shadow: 0 0 6px rgba(30, 30, 30, 0.7);
+}
+
+#showcase1 #showcase-text, #showcase2 #showcase-text {
+    text-align: center;
+    color: #383838;
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+#showcase-text h1 {
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+#showcase-text p {
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+#showcase-text a {
+    color: #383838;
+}
+
+#showcase1 img {
+    order: 1;
+}
+
+#showcase1 #showcase-text {
+    order: 2;
+}
+
+#showcase2 img {
+    order: 2;
+}
+
+#showcase2 #showcase-text {
+    order: 1;
+}
+
+#imagef, #image1, #image2, #image3, #image4, #image5,
+     #image6, #image7, #image8, #imagel {
+    position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#imagef, #imagel {
+    opacity: 0.85 !important;
+}
+
+#imagef {
+    background-image: url('../images/imagef.jpg');
+    min-height: 100%;
+}
+
+#imagel {
+    background-image: url('../images/imagel.jpg');
+    min-height: 100%;
+}
+
+#image1 {
+    background-image: url('../images/image1.jpg');
+    min-height: 100%;
+}
+
+#image2 {
+    background-image: url('../images/image2.jpg');
+    min-height: 100%;
+}
+
+#image3 {
+    background-image: url('../images/image3.jpg');
+    min-height: 100%;
+}
+
+#image4 {
+    background-image: url('../images/image4.jpg');
+    min-height: 100%;
+}
+
+#image5 {
+    background-image: url('../images/image5.jpg');
+    min-height: 100%;
+}
+
+#image6 {
+    background-image: url('../images/image6.jpg');
+    min-height: 100%;
+}
+
+#image7 {
+    background-image: url('../images/image7.jpg');
+    min-height: 100%;
+}
+
+#image8 {
+    background-image: url('../images/image8.jpg');
+    min-height: 100%;
+}
+
+#contact {
+    position: relative;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #111111;
+    padding: 10px;
+    max-width: 300px;
+    margin: auto;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 5px rgba(30, 30, 30, 0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+#contact h1 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-top: 150px;
+}
+
+#contact p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 30px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #111111;
+    margin-top: 50px;
+}
+
+@media(max-width: 800px) {
+    #imagef, #image1, #image2, #image3, #image4, #image5,
+         #image6, #image7, #image8, #imagel {
+        background-attachment: scroll;
+    }
+
+    #showcase1, #showcase2 {
+        flex-direction: column;
+        min-height: 100%;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    #showcase1 {
+        background-image: url('../images/image1.jpg');
+    }
+
+    #showcase2 {
+        background-image: url('../images/image2.jpg');
+    }
+
+    #showcase1 img, #showcase2 img,
+        #showcase1 #showcase-text, #showcase2 #showcase-text {
+        visibility: hidden;
+    }
+
+    #image1, #image2 {
+        display: none;
+    }
+
+    .divider {
+        display: inline;
+    }
+}
